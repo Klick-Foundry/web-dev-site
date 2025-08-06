@@ -1,14 +1,18 @@
 ---
-import Features from "@components/Features.astro";
-import FeaturesMore from "@components/FeaturesMore.astro";
-import IntHero from "@components/IntHero.astro";
-import Pricing from "@components/Pricing.astro";
+import Banner849 from "@components/Banner-849/banner-849.astro";
+import Features from "@components/Services-1644/services-1644-story.astro";
+import FeaturesMore from "@components/WhyChoose-1821/why-choose-1821-story-2.astro";
+import Pricing from "@components/Pricing-357/pricing-357-story.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
-import { cn } from "@utils/utils";
 ---
 
-<BaseLayout title="Services" description="">
-  <IntHero heading="Services" />
+<BaseLayout title="Services" description="Fast, affordable web design services for small businesses — $99/mo simple sites, $199/mo custom with updates. Grow leads — learn how we help!">
+  <Banner849
+    title="Services"
+    src="/assets/images/web-dev/backsplash.jpg"
+    alt="Blue backsplash"
+    align="center"
+  />
   <Features />
   <FeaturesMore />
   <Pricing />

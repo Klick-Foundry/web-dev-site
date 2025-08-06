@@ -14,20 +14,20 @@ const navData = [
     url: "/services/",
     children: [],
   },
-  {
-    key: "More",
-    url: "/more/",
-    children: [
-      { 
-        key: "Testimonials", 
-        url: "/more/reviews/" 
-      },
-      {
-        key: "Gallery",
-        url: "/more/gallery/",
-      },
-    ],
-  },
+  // {
+  //   key: "More",
+  //   url: "/more/",
+  //   children: [
+  //     { 
+  //       key: "Testimonials", 
+  //       url: "/more/reviews/" 
+  //     },
+  //     {
+  //       key: "Gallery",
+  //       url: "/more/gallery/",
+  //     },
+  //   ],
+  // },
 
   // {
   //   key: "Blog",

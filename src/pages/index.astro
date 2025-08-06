@@ -1,28 +1,26 @@
 ---
 import Layout from "../layouts/BaseLayout.astro";
-import Hero from "@components/Hero.astro";
-import SEO from "@components/SEO.astro";
+import Hero from "@components/Hero-1619/hero-1619-story.astro";
 import WhyChooseUs from "@components/WhyChooseUs.astro";
-import Stats from "@components/Stats.astro";
-import CTA from "@components/CTA.astro";
-import Testimonials from "@components/Testimonials.astro";
-import Review from "@components/Review.astro";
-import FAQ from "@components/FAQ.astro";
-import WhatWeDo from "@components/WhatWeDo.astro";
-import Pricing from "@components/Pricing.astro";
-import FeaturesHome from "@components/FeaturesHome.astro";
-import Portfolio from "@components/Portfolio.astro";
+import Stats from "@components/Stats-315/stats-315-story.astro";
+import CTA from "@components/CTA-51/cta-51-story.astro";
+import FAQ from "@components/FAQ-351/faq-351-story.astro";
+import WhatWeDo from "@components/WhyChoose-289/why-choose-289-story.astro";
+import Pricing from "@components/Pricing-357/pricing-357-story.astro";
+import FeaturesHome from "@components/WhyChoose-1662/why-choose-1662-story.astro";
 ---
 
-<Layout title="Web Dev" description="">
+<Layout
+  title="Website Experts | Klick Foundry | Gilbert, AZ"
+  description="Grow with fast, affordable, updatable web design for small businesses — $199/mo, no upfront cost. Boost leads with custom sites built for results. Start today!"
+>
   <Hero />
   <WhatWeDo />
   <FeaturesHome />
-  <Portfolio />
+  <!-- <Portfolio /> -->
   <WhyChooseUs />
   <Stats />
-  <FAQ />
-  <Testimonials
+  <!-- <Testimonials
     topper="Reviews"
     title="What People Say About Us"
     testimonialsButton
@@ -47,7 +45,8 @@ import Portfolio from "@components/Portfolio.astro";
       name="Kimmie M."
       title="Homeowner"
     />
-  </Testimonials>
+  </Testimonials> -->
   <Pricing />
+  <FAQ />
   <CTA />
 </Layout>

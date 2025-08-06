@@ -1,0 +1,36 @@
+---
+import { cn } from "@utils/utils";
+import Sbs598 from "./sbs-598.astro";
+import Text from "@components/ContentFlair/Toppers/Text/text.astro";
+
+interface Props {}
+
+const {} = Astro.props;
+
+// Styles
+---
+
+<Sbs598
+  topper="Klick Foundry"
+  title="Who We Are"
+  alt="Working at desk"
+  src="/assets/images/web-dev/working.jpg"
+>
+  <Text
+    className="cs-text"
+    text="We’re a web dev team passionate about helping small businesses thrive online."
+  />
+  <Text
+    className="cs-text"
+    text="Started by a software engineer tired of seeing locals overpay for clunky sites, we offer hand-coded solutions that deliver results — without the big-agency price tag."
+  />
+  <Text
+    className="cs-text"
+    text="Our monthly plans make professional websites accessible, with edits and real support to keep your business moving."
+  />
+  <Text
+    className="cs-text"
+    text="Whether you’re in a small town or a big city, we’re here to get you online and growing — fast."
+  />
+  <Text className="cs-text" text="Let us know what we can do for you." />
+</Sbs598>

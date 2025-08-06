@@ -1,0 +1,72 @@
+---
+import SectionHeader from "@components/ContentFlair/Toppers/SectionHeader/SectionHeader.astro";
+import Text from "@components/ContentFlair/Toppers/Text/text.astro";
+import { cn } from "@utils/utils";
+
+interface Props {
+  topper: string;
+  title: string;
+  text: string;
+  background?: boolean;
+}
+
+const { topper, title, text, background = true } = Astro.props;
+
+// Styles
+const section =
+  "bg-[#f7f7f7] relative overflow-hidden z-[1] dark:bg-[rgba(0,_0,_0,_0.2)] pt-0";
+const container = "max-w-[80rem] gap-[clamp(2.5rem,_3.9vw,_4rem)]";
+const content = "";
+const topperStyles = "";
+const titleStyles = "m-0 max-w-[23ch]";
+const textStyles = "text-base leading-[1.5em] w-full max-w-[40.625rem] m-0";
+const wrapper =
+  "w-full flex flex-col justify-between gap-[clamp(1rem,_3.2vw,_2rem)] sm:flex-row sm:items-start";
+const floater =
+  "w-[clamp(15.375rem,_50vw,_36.375rem)] h-auto absolute right-[-4rem] top-[-0.5rem] z-[-1] dark:opacity-10";
+const h2 =
+  "text-headerFontSize block font-bold mb-[25px] md:text-[2.5em] text-headerColor dark:text-bodyTextColorWhite";
+const span = "font-bold text-primary";
+---
+
+<SectionHeader
+  sectionId="why-choose-1662"
+  topper={topper}
+  title={title}
+  text={text}
+  sectionStyles={cn(section)}
+  containerStyles={cn(container)}
+  contentAlign="left"
+  contentStyles={cn(content)}
+  topperStyles={cn(topperStyles)}
+  titleStyles={cn(titleStyles)}
+  textStyles={cn(textStyles)}
+>
+  <div class="max-w-[50rem] self-start">
+    <h2 class={cn(h2)}>
+      <span class={cn(span)}>$0</span> Down, <span class={cn(span)}>$199</span> Per
+      Month
+    </h2>
+    <Text className={cn(textStyles)} text="Launch a 5-page website with no upfront cost — perfect for small businesses ready to grow. Need more? We’ll customize pricing based on pages and features." />
+    <br />
+    <Text className={cn(textStyles)} text="You control your domain and content — cancel anytime, no strings attached." />
+  </div>
+  <div class={cn(wrapper)}>
+    <slot />
+  </div>
+  <!---SVG Graphic-->
+  {
+    background && (
+      <img
+        class={cn(floater)}
+        src="/src/icons/diagnol-ovals.svg"
+        alt="graphic"
+        loading="lazy"
+        decoding="async"
+        height="710"
+        aria-hidden="true"
+        width="690"
+      />
+    )
+  }
+</SectionHeader>

@@ -1,0 +1,54 @@
+---
+import { cn } from "@utils/utils";
+import WhyChoose1662 from "./why-choose-1662.astro";
+import WhyChoose1662Section from "./why-choose-1662-section.astro";
+import WhyChoose1662Li from "./why-choose-1662-li.astro";
+
+interface Props {}
+
+const {} = Astro.props;
+
+// Styles
+---
+
+<WhyChoose1662Section
+  topper=""
+  title=""
+  text=""
+  background={false}
+>
+  <WhyChoose1662>
+    <WhyChoose1662Li
+      number="01"
+      title="Hosting Included"
+      text="Fast, secure hosting baked into your monthly service."
+    />
+    <WhyChoose1662Li
+      number="02"
+      title="Unlimited* Edits"
+      text="Update your site whenever you need on a Professional plan — let us know any time, no hassle."
+    />
+    <WhyChoose1662Li
+      number="03"
+      title="Instant Support"
+      text="Reach us anytime — real help when you need it."
+    />
+    <WhyChoose1662Li
+      number="04"
+      title="Pro Design & Code"
+      text="Clean, custom websites built to fit your business and attract customers."
+    />
+  </WhyChoose1662>
+  <WhyChoose1662>
+    <WhyChoose1662Li
+      number="05"
+      title="Top Speed Scores"
+      text="Sites that score 98–100 on Google PageSpeed — keeping visitors and search engines happy."
+    />
+    <WhyChoose1662Li
+      number="06"
+      title="Fully Secure"
+      text="Each website is static and built with HTML and CSS, eliminating security risks."
+    />
+  </WhyChoose1662>
+</WhyChoose1662Section>

@@ -21,42 +21,42 @@ const ul = "p-0 m-0 sm:columns-2 max-w-[34.375rem]"
 const li = "list-none text-xl leading-[1.5em] font-bold mb-2 text-headerColor dark:text-bodyTextColorWhite flex justify-start items-center"
 const icon = "mr-4"
 const button = "text-base leading-[clamp(2.875rem,5.5vw,3.5rem)] no-underline font-bold text-center mt-8 text-white min-w-[9.375rem] px-[1.5rem] bg-primary rounded inline-block relative z-[1] box-border"
-const buttonBefore = "before:content-[''] before:absolute before:h-full before:w-0 before:bg-black before:opacity-100 before:top-0 before:left-0 before:z-[-1] before:rounded before:transform before:transition-all before:duration-300 before:hover:w-full"
+const buttonBefore = "before:content-[''] before:absolute before:h-full before:w-0 before:bg-black before:opacity-100 before:top-0 before:left-0 before:z-[-1] before:rounded-sm before:transform before:transition-all before:duration-300 before:hover:w-full"
 ---
 
 <section id="why-choose-37" class={cn(whyChoose)}>
   <div class={cn(container)}>
       <!-- Right Image -->
       <picture class={cn(picture, "picture")}>
-          <source media="(max-width: 600px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb-m.jpg">
-          <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb.jpg">
-          <img class={cn(img)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/lightbulb.jpg" alt="lightbulbs on a wire" width="858" height="781">
+          <source media="(max-width: 600px)" srcset="/assets/images/web-dev/laptop2.jpg">
+          <source media="(min-width: 601px)" srcset="/assets/images/web-dev/laptop2.jpg">
+          <img class={cn(img)} aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/web-dev/laptop2.jpg" alt="laptop" width="858" height="781">
       </picture>
       <div class={cn(content)}>
           <span class={cn(topper)}>Why Choose Us</span>
-          <h2 class={cn(title, titleUnderline)}>Et orci volutpat, back up generator installations</h2>
+          <h2 class={cn(title, titleUnderline)}>Your Business Deserves a Rockstar Website</h2>
           <p class={cn(text)}>
-              Facilisis condimentum viverra scelerisque ac morbi sit sed. Turpis sagittis in blandit eleifend tortor ullamcorper eu placerat. Et orci felis volutpat, etiam vitae egestas volutpat pulvinar. 
+            We build websites that load fast, rank well, and bring in customers — without breaking your budget. See how your current site stacks up with a free Google PageSpeed test. 
           </p>
           <ul class={cn(ul)}>
               <li class={cn(li)}>
                   <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Clean Work
+                  Faster Sites, More Leads
               </li>
               <li class={cn(li)}>
                   <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Attention To Detail
+                  Boost Your Local Ranking
               </li>
               <li class={cn(li)}>
                   <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Punctual
+                  Stress-Free Management
               </li>
               <li class={cn(li)}>
                   <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Quality Guaranteed
+                  Affordable Growth
               </li>
           </ul>
-          <a href="" class={cn(button, buttonBefore)}>Request A Quote Today</a>
+          <a href="/contact" class={cn(button, buttonBefore)}>START NOW</a>
       </div>
   </div>
 </section>

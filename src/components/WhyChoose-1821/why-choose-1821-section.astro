@@ -1,0 +1,65 @@
+---
+import Picture from "@components/ContentFlair/Picture/picture.astro";
+import Container from "@components/ContentFlair/Toppers/Container/container.astro";
+import Content from "@components/ContentFlair/Toppers/Content/content.astro";
+import Section from "@components/ContentFlair/Toppers/Section/section.astro";
+import Title from "@components/ContentFlair/Toppers/Title/title.astro";
+import Topper from "@components/ContentFlair/Toppers/Topper/topper.astro";
+import { cn } from "@utils/utils";
+
+interface Props {
+  topper: string;
+  title: string;
+  src: string;
+  mobileSrc?: string;
+  tabletSrc?: string;
+  alt: string;
+  width?: string;
+  height?: string;
+}
+
+const {
+  topper,
+  title,
+  src,
+  mobileSrc = src,
+  tabletSrc = src,
+  alt,
+  width = "562",
+  height = "568",
+} = Astro.props;
+
+// Styles
+const section =
+  "relative overflow-hidden z-[1] py-0 px-0 lg:before:content-[''] lg:before:w-full lg:before:h-full lg:before:bg-primary lg:before:opacity-100 lg:before:block lg:before:absolute lg:before:left-auto lg:before:right-1/2 lg:before:mr-[0.625rem] lg:before:z-[-1] lg:dark:before:bg-primary lg:dark:before:opacity-40";
+const container =
+  "max-w-[106.25rem] relative z-[1] gap-0 sm:flex-row sm:justify-center sm:items-stretch";
+const content =
+  "p-sectionPadding bg-primary box-border relative z-[1] sm:text-left sm:w-full sm:items-start sm:bg-transparent sm:before:content-[''] sm:before:w-full sm:before:h-full sm:before:bg-primary sm:before:opacity-100 sm:before:absolute sm:before:block sm:before:top-0 sm:before:left-0 sm:before:z-[-1] lg:w-1/2 lg:pl-0 lg:pr-0 lg:before:left-auto lg:before:right-1/2 lg:before:mr-[0.625rem] dark:bg-transparent dark:before:content-[''] dark:before:w-full dark:before:h-full dark:before:bg-primary dark:before:opacity-40 dark:before:absolute dark:before:block dark:before:top-0 dark:before:left-0 lg:dark:bg-transparent lg:dark:before:hidden";
+const topperStyles = "text-white";
+const titleStyles = "mb-12 max-w-[13ch] text-white";
+const picture =
+  "w-full max-w-[36.625rem] h-auto block sm:ml-auto sm:max-w-full lg:w-auto lg:h-4/5 lg:flex lg:items-end lg:absolute lg:bottom-10 lg:right-10 lg:z-[-1]";
+const img =
+  "w-full h-auto block lg:w-auto lg:h-full lg:max-h-[47.5rem] lg:object-contain";
+---
+
+<Section className={section}>
+  <Container className={container}>
+    <Content className={content} align="center">
+      <Topper className={topperStyles} topper={topper} />
+      <Title className={titleStyles} title={title} />
+      <Picture
+        className={picture}
+        imgClassName={img}
+        src={src}
+        mobileSrc={mobileSrc}
+        tabletSrc={tabletSrc}
+        width={width}
+        height={height}
+        alt={alt}
+      />
+    </Content>
+    <slot />
+  </Container>
+</Section>

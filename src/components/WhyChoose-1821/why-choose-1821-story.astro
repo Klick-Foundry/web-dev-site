@@ -1,0 +1,37 @@
+---
+import { cn } from "@utils/utils";
+import WhyChoose1821 from "./why-choose-1821.astro";
+import WhyChoose1821Section from "./why-choose-1821-section.astro";
+import WhyChoose1821Li from "./why-choose-1821-li.astro";
+
+interface Props {}
+
+const {} = Astro.props;
+
+// Styles
+---
+
+<WhyChoose1821Section
+  topper="Why Choose Us"
+  title="Websites Built for Your Success"
+  src="/assets/images/web-dev/work-at-desk.jpg"
+  alt="Woman working at a desk"
+>
+  <WhyChoose1821>
+    <WhyChoose1821Li
+      src="/src/icons/Like.svg"
+      title="Affordable & Effective"
+      text="$0 down and $199/mo gets you a site that pulls in leads — built right, every time."
+    />
+    <WhyChoose1821Li
+      src="/src/icons/red-layer.svg"
+      title="Hands-On Support"
+      text="We’re not bots — call us anytime, and we’ll handle your updates right away."
+    />
+    <WhyChoose1821Li
+      src="/src/icons/dashboard-gold.svg"
+      title="Proven Tech"
+      text="Fast, secure, and search-friendly — our code keeps your business ahead."
+    />
+  </WhyChoose1821>
+</WhyChoose1821Section>

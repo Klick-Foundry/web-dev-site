@@ -1,0 +1,49 @@
+---
+import { cn } from "@utils/utils";
+
+interface Props {
+  title: string;
+  text: string;
+  src: string;
+  alt?: string;
+  width?: string;
+  height?: string;
+}
+
+const {
+  title,
+  text,
+  src,
+  alt = "icon",
+  width = "32",
+  height = "32",
+} = Astro.props;
+
+// Styles
+const item =
+  "list-none w-full max-w-[36.625rem] box-border flex flex-col items-start gap-3 sm:flex-row";
+const icon = "w-8 h-auto block grayscale brightness-0 dark:brightness-[1000]";
+const itemWrapper = "w-full flex flex-col items-start gap-3";
+const h3 =
+  "text-[clamp(1.25rem,_2vw,_1.5625rem)] leading-[1.2em] font-bold m-0 text-headerColor dark:text-bodyTextColorWhite";
+const itemText =
+  "text-base leading-[1.5em] m-0 text-bodyTextColor dark:text-bodyTextColorWhite dark:opacity-80";
+---
+
+<li class={cn(item)}>
+  <img
+    class={cn(icon)}
+    loading="lazy"
+    decoding="async"
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+  />
+  <div class={cn(itemWrapper)}>
+    <h3 class={cn(h3)}>{title}</h3>
+    <p class={cn(itemText)}>
+      {text}
+    </p>
+  </div>
+</li>

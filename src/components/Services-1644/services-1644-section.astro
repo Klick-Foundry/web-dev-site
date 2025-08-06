@@ -1,0 +1,30 @@
+---
+import SectionHeader from "@components/ContentFlair/Toppers/SectionHeader/SectionHeader.astro";
+import { cn } from "@utils/utils";
+
+interface Props {topper?: string; title?: string; text?: string}
+
+const {topper, title, text} = Astro.props;
+
+// Styles
+const section = "";
+const container =
+  "max-w-[80rem] gap-[clamp(2.5rem,_4vw,_4rem)] sm:max-w-[120rem]";
+const content = "";
+const topperStyles = "";
+const titleStyles = "max-w-none";
+const textStyles = "max-w-[60ch]";
+---
+
+<SectionHeader
+  sectionId="services-1644"
+  containerStyles={cn(container)}
+  titleStyles={cn(titleStyles)}
+  textStyles={cn(textStyles)}
+  topper={topper}
+  title={title}
+  text={text}
+  contentAlign="center"
+>
+  <slot />
+</SectionHeader>

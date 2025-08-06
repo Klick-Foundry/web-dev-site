@@ -1,0 +1,85 @@
+---
+import { cn } from "@utils/utils";
+import Faq351 from "./faq-351.astro";
+import Section from "@components/ContentFlair/Toppers/Section/section.astro";
+import Container from "@components/ContentFlair/Toppers/Container/container.astro";
+import Content from "@components/ContentFlair/Toppers/Content/content.astro";
+import Topper from "@components/ContentFlair/Toppers/Topper/topper.astro";
+import Title from "@components/ContentFlair/Toppers/Title/title.astro";
+import Faq351Li from "./faq-351-li.astro";
+
+interface Props {}
+
+const {} = Astro.props;
+
+// Styles
+const section = "bg-[#f7f7f7] dark:bg-[rgba(0,_0,_0,_0.2)]";
+const container = "gap-0 gap-y-[clamp(3rem,_6vw,_4rem)] md:max-w-[50rem] ";
+const content = "w-[100%]";
+const topper = "dark:text-primaryLight";
+const title = "m-0";
+---
+
+<Section id="faq-351" className={cn(section)}>
+  <Container maxWidth="34.375rem" className={cn(container)}>
+    <Content className={cn(content)} align="center">
+      <Topper className={cn(topper)} topper="FAQ" />
+      <Title className={cn(title)} title="Frequently Asked Questions" />
+    </Content>
+    <Faq351>
+      <Faq351Li
+        title="What is unlimited* edits?"
+        text={[
+          "For Professional subscriptions, each month, you can request as many updates as you want within up to 5 hours during the month. This is to prevent others from taking all of our time instead of being able to give part of our time to you as well. These 5 hours do not roll over to the next month.",
+        ]}
+      />
+      <Faq351Li
+        title="Are there any monthly term length minimums?"
+        text={[
+          "If you choose the Professional service plan, there is a 1 year minimum term to make it fair for the people who choose the Buyout option and later decide to add the Professional service plan. After a year, the service is month to month.",
+          "At any point, if you choose the Buyout option, the site is yours from then on with no minimum term (even if you add the Professional Plan to the site after; the service would be month to month).",
+          "The Basic service plan uses a template site and so is month to month with no minimum term."
+        ]}
+      />
+      <Faq351Li
+        title="What is the process and how long does it take?"
+        text={[
+          "Step 1: We will be sending a questionnaire about your business and what you do",
+          "Step 2: We hop on a video call to show the first draft and hear any change requests you would like",
+          "Step 3: We build the site and give you a look before it's approved and it goes live",
+          "It typically takes 2-4 weeks, depending on how soon you are able to respond to our questionnaire and provide any website assets.",
+        ]}
+      />
+      <Faq351Li
+        title="What if I want more than 5 or 10 pages?"
+        text={[
+          "No problem at all! We can add pages to the website for an additional one-time price of $100 per page added.",
+        ]}
+      />
+      <Faq351Li
+        title="What payment methods do you accept?"
+        text={[
+          "We accept ACH and cards for instant processing — no having to wait and wonder if a check came and got applied to the right invoice.",
+        ]}
+      />
+      <Faq351Li
+        title="Do you do SEO (Search Engine Optimization)?"
+        text={[
+          "Yes, we include on-page SEO that optimizes your web pages themselves for search engines, such as fast load times (our tech stack specifically optimizes this) and sitemap generation. We don't do any off-site SEO like link building or blogs, but this is a service that an SEO agency can provide to work with the website, and they work together very well.",
+        ]}
+      />
+      <Faq351Li
+        title="If I cancel, do I keep the site and domain?"
+        text={[
+          "If you purchase the Buyout pricing option, yes to both. If you are on a monthly subscription (and don't buy the buyout), you keep your domain (www), but not the site (the code we built).",
+        ]}
+      />
+      <Faq351Li
+        title="How long will it take my website to rank on Google?"
+        text={[
+          "It all depends on Google, but as a general rule, it takes 3-6 months to see any changed ranking results. And anyone who says they can get it sooner is trying to pull one over you. This is just how Google is designed, and results depend on many factors, including locality, competition, and keywords used.",
+        ]}
+      />
+    </Faq351>
+  </Container>
+</Section>

@@ -1,0 +1,66 @@
+---
+import Picture from "@components/ContentFlair/Picture/picture.astro";
+import Container from "@components/ContentFlair/Toppers/Container/container.astro";
+import Content from "@components/ContentFlair/Toppers/Content/content.astro";
+import Section from "@components/ContentFlair/Toppers/Section/section.astro";
+import Title from "@components/ContentFlair/Toppers/Title/title.astro";
+import Topper from "@components/ContentFlair/Toppers/Topper/topper.astro";
+import { cn } from "@utils/utils";
+
+interface Props {
+  topper: string;
+  title: string;
+  alt: string;
+  src: string;
+  mobileSrc?: string;
+  tabletSrc?: string;
+  width?: string;
+  height?: string;
+}
+
+const {
+  topper,
+  title,
+  alt,
+  src,
+  mobileSrc = src,
+  tabletSrc = src,
+  width = "",
+  height = "",
+} = Astro.props;
+
+// Styles
+const section = "relative p-[0] sm:py-[clamp(5.625rem,_9vw,_9.375rem)] sm:px-4";
+const container = "sm:flex-row sm:justify-end";
+const content = "max-w-[32.625rem] p-sectionPadding box-border sm:w-[45%] sm:p-0";
+const topperStyles = "";
+const titleStyles = "";
+const background = "block relative w-full h-[16rem] z-[1] sm:w-1/2 sm:h-auto sm:absolute sm:top-0 sm:bottom-0 sm:right-1/2";
+const img = "absolute top-0 left-0 h-full w-full object-cover";
+---
+
+<Section id="sbs-598" className={cn(section)}>
+  <Picture
+    src={src}
+    alt={alt}
+    mobileSrc={mobileSrc}
+    tabletSrc={tabletSrc}
+    width={width}
+    height={height}
+    className={cn(background)}
+    imgClassName={cn(img)}
+  />
+  <Container className={cn(container)}>
+    <Content className={cn(content)}>
+      <Topper topper={topper} className={cn(topperStyles)} />
+      <Title title={title} className={cn(titleStyles)} />
+      <slot />
+    </Content>
+  </Container>
+</Section>
+
+<style>
+    :global(#sbs-598 p) {
+        @apply mb-4 last-of-type:mb-8
+    }
+</style>

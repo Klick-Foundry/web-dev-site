@@ -1,0 +1,73 @@
+---
+import { cn } from "@utils/utils";
+import Pricing357 from "./pricing-357.astro";
+import Pricing357Section from "./pricing-357-section.astro";
+import Pricing357Item from "./pricing-357-item.astro";
+import Pricing357Li from "./pricing-357-li.astro";
+
+interface Props {}
+
+const {} = Astro.props;
+
+// Styles
+---
+
+<Pricing357Section
+  topper="Pricing"
+  title="Simple Plans for Business Growth"
+  text="Get online fast with no headaches — our plans fit your budget and scale with your business."
+>
+  <Pricing357>
+    <Pricing357Item
+      title="Basic"
+      desc="Basic features for those who just need a website"
+      price="$99"
+      rate="/month"
+      href="/contact"
+      ariaLabel="Get started Basic"
+      buttonText="Get Started"
+    >
+      <Pricing357Li text="5-page static template site" />
+      <Pricing357Li text="Hosting included" />
+      <Pricing357Li text="Branding and company info" />
+      <Pricing357Li text="Basic tweaks (e.g. holiday hours, contact update)" />
+      <Pricing357Li text="Month to month" />
+      <Pricing357Li disabled text="Unlimited* edits" />
+    </Pricing357Item>
+    <Pricing357Item
+      title="Professional"
+      desc="Custom sites for those who want to make their website their own"
+      price="$199"
+      rate="/month"
+      popular
+      href="/contact"
+      ariaLabel="Get started Professional"
+      buttonText="Get Started"
+    >
+      <Pricing357Li text="Custom design & layout" />
+      <Pricing357Li text="Unlimited* edits" />
+      <Pricing357Li text="No upfront build cost" />
+      <Pricing357Li text="Up to 10 pages (unless added)" />
+      <Pricing357Li text="2 SEO Ranking Pages Included" />
+      <Pricing357Li text="Hosting included" />
+      <Pricing357Li text="Monthly maintenance included" />
+      <!-- <Pricing357Li text="Hosting included" /> -->
+    </Pricing357Item>
+    <Pricing357Item
+      title="Standalone"
+      desc="Take full ownership of your beautiful website in a one-time buyout"
+      price="$2,497"
+      rate="one-time"
+      href="/contact"
+      ariaLabel="Get started buyout"
+      buttonText="Get Started"
+    >
+      <Pricing357Li text="Custom-designed website" />
+      <Pricing357Li text="Fully own your website" />
+      <Pricing357Li text="Up to 10 pages (unless added)" />
+      <Pricing357Li text="2 SEO Ranking Pages Included" />
+      <Pricing357Li text="Any edit service add-on is month to month" />
+      <Pricing357Li disabled text="Unlimited* edits (unless added)" />
+    </Pricing357Item>
+  </Pricing357>
+</Pricing357Section>
