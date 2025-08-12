@@ -32,6 +32,9 @@ import LikeGold from "./icons/Like-gold.svg";
 import LogoBasicSvg from "./icons/logo-basic.svg";
 import Mechanic from "./icons/mechanic1.svg";
 import Mechanic2 from "./icons/mechanic2.svg";
+import MechEmail from "./icons/mech-email.svg";
+import MechPhone from "./icons/mech-phone.svg";
+import MechPin from "./icons/mech-pin.svg";
 import Members from "./icons/members.svg";
 import PersonGrey from "./icons/person-grey.svg";
 import Phone1A from "./icons/phone-1a.svg";
@@ -76,6 +79,9 @@ export {
   LogoBasicSvg,
   Mechanic,
   Mechanic2,
+  MechEmail,
+  MechPhone,
+  MechPin,
   Members,
   PersonGrey,
   Phone1A,
