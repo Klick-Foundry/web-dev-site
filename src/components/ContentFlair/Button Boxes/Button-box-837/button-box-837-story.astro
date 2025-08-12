@@ -2,6 +2,8 @@
 import { cn } from "@utils/utils";
 import ButtonBox837 from "./button-box-837.astro";
 import ButtonBox837Button from "./button-box-837-button.astro";
+import { IconsPhone } from "@assets/index";
+import { IconsMail } from "@assets/index";
 
 interface Props {}
 
@@ -13,13 +15,13 @@ const {} = Astro.props;
 <ButtonBox837>
   <ButtonBox837Button
     href=""
-    src="/src/assets/icons/Icons_phone.svg"
+    src={IconsPhone.src}
     header="Call Now"
     text="(555) 555-0234"
   />
   <ButtonBox837Button
     href=""
-    src="/src/assets/icons/Icons_mail.svg"
+    src={IconsMail.src}
     header="Send a Message"
     text="Info@health&wellness.com"
   />

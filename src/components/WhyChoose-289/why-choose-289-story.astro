@@ -3,6 +3,7 @@ import { cn } from "@utils/utils";
 import WhyChoose289 from "./why-choose-289.astro";
 import WhyChoose289Section from "./why-choose-289-section.astro";
 import WhyChoose289Li from "./why-choose-289-li.astro";
+import { DashboardGold, Gear, LifebuoyGold } from "@assets/index";
 
 interface Props {}
 
@@ -20,17 +21,17 @@ const {} = Astro.props;
     <WhyChoose289Li
       title="Lightning-Fast Design"
       text="Mobile-first responsive websites that load in under a second, keeping visitors engaged and search engines happy."
-      src="/src/assets/icons/dashboard-gold.svg"
+      src={DashboardGold.src}
     />
     <WhyChoose289Li
       title="Unlimited* Updates"
       text="Want to make a change later? No problem — no coding skills needed, just tell us what you want on a Professional plan and it's done."
-      src="/src/assets/icons/Lifebuoy-gold.svg"
+      src={LifebuoyGold.src}
     />
     <WhyChoose289Li
       title="SEO Foundations"
       text="Built-in on-page optimization to help your business rank higher locally and pull in more leads."
-      src="/src/assets/icons/gear.svg"
+      src={Gear.src}
     />
   </WhyChoose289>
 </WhyChoose289Section>

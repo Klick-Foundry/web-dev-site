@@ -3,7 +3,7 @@ import AboutUs from "@components/SBS-598/sbs-598-story.astro";
 import WhyChooseAbout from "@components/WhyChoose-1821/why-choose-1821-story.astro";
 import Layout from "../layouts/BaseLayout.astro";
 import Banner849 from "@components/Banner-849/banner-849.astro";
-import Img from "/src/assets/images/web-dev/backsplash.webp"
+import { Backsplash } from "@assets/index";
 ---
 
 <Layout
@@ -12,7 +12,7 @@ import Img from "/src/assets/images/web-dev/backsplash.webp"
 >
   <Banner849
     title="About Klick Foundry"
-    src={Img}
+    src={Backsplash}
     alt="Blue backsplash"
     align="center"
   />

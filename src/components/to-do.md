@@ -13,6 +13,7 @@ Other
 
 Move original files to assets/ 
 Move svg's to src/assets/icons/
+Make universal assets file
 
 Refactor Picture component to use Astro's
 Erase all mobileSrc and tabletSrc

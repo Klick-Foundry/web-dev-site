@@ -3,7 +3,7 @@ import { cn } from "@utils/utils";
 import WhyChoose1821 from "./why-choose-1821.astro";
 import WhyChoose1821Section from "./why-choose-1821-section.astro";
 import WhyChoose1821Li from "./why-choose-1821-li.astro";
-import Img from "/src/assets/images/web-dev/computer.webp"
+import { Computer, DashboardGold, Like, RedHourglass, RedLayer } from "@assets/index";
 
 interface Props {}
 
@@ -15,27 +15,27 @@ const {} = Astro.props;
 <WhyChoose1821Section
   topper="Why Choose Us"
   title="Why Choose Klick Foundry"
-  src={Img}
+  src={Computer}
   alt="Computer"
 >
   <WhyChoose1821>
     <WhyChoose1821Li
-      src="/src/assets/icons/dashboard-gold.svg"
+      src={DashboardGold.src}
       title="Lightning-Fast Performance"
       text="Our sites score 98–100 on Google PageSpeed — keeping visitors engaged and rankings high."
     />
     <WhyChoose1821Li
-      src="/src/assets/icons/red-layer.svg"
+      src={RedLayer.src}
       title="Built for Your Market"
       text='Custom designs that fit your business and pull in local customers — make it feel like "you."'
     />
     <WhyChoose1821Li
-      src="/src/assets/icons/red-hourglass.svg"
+      src={RedHourglass.src}
       title="Always-On Support"
       text="Real people, real help — anytime you need us, we’re a call or email away."
     />
     <WhyChoose1821Li
-      src="/src/assets/icons/Like.svg"
+      src={Like.src}
       title="Affordable Plans"
       text="Let's get you online fast — grow without breaking the bank."
     />

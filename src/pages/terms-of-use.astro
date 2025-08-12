@@ -2,13 +2,13 @@
 import Banner849 from "@components/Banner-849/banner-849.astro";
 import ContentPage713 from "@components/ContentPage-713/content-page-713.astro";
 import BaseLayout from "@layouts/BaseLayout.astro";
-import Img from "/src/assets/images/web-dev/backsplash.webp"
+import { Backsplash } from "@assets/index";
 ---
 
 <BaseLayout title="Terms of Use" description="Review the rules and guidelines for using Klick Foundry LLC. Understand your rights and responsibilities when accessing our business and development resources.">
   <Banner849
     title="Terms of Use"
-    src={Img}
+    src={Backsplash}
     alt="Blue backsplash"
     align="center"
   />

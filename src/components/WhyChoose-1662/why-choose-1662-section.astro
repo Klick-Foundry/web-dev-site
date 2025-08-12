@@ -1,4 +1,5 @@
 ---
+import { DiagnolOvals } from "@assets/index";
 import SectionHeader from "@components/ContentFlair/Toppers/SectionHeader/SectionHeader.astro";
 import Text from "@components/ContentFlair/Toppers/Text/text.astro";
 import { cn } from "@utils/utils";
@@ -59,7 +60,7 @@ const span = "font-bold text-primary";
     background && (
       <img
         class={cn(floater)}
-        src="/src/assets/icons/diagnol-ovals.svg"
+        src={DiagnolOvals.src}
         alt="graphic"
         loading="lazy"
         decoding="async"

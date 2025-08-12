@@ -1,7 +1,7 @@
 ---
 import { cn } from "@utils/utils";
 import Picture from "./ContentFlair/Picture/picture.astro";
-import Laptop from "/src/assets/images/web-dev/laptop2.webp";
+import { Laptop2, YellowCheck } from "@assets/index";
 
 // Styles
 const whyChoose =
@@ -37,7 +37,7 @@ const buttonBefore =
     <Picture
       className={cn(picture, "picture")}
       imgClassName={cn(img)}
-      src={Laptop}
+      src={Laptop2}
       alt="laptop"
       width="858"
       height="781"
@@ -59,7 +59,7 @@ const buttonBefore =
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/src/assets/icons/yellow-check.svg"
+            src={YellowCheck.src}
             alt="checkmark"
             width="27"
             height="27"
@@ -72,7 +72,7 @@ const buttonBefore =
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/src/assets/icons/yellow-check.svg"
+            src={YellowCheck.src}
             alt="checkmark"
             width="27"
             height="27"
@@ -85,7 +85,7 @@ const buttonBefore =
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/src/assets/icons/yellow-check.svg"
+            src={YellowCheck.src}
             alt="checkmark"
             width="27"
             height="27"
@@ -98,7 +98,7 @@ const buttonBefore =
             aria-hidden="true"
             loading="lazy"
             decoding="async"
-            src="/src/assets/icons/yellow-check.svg"
+            src={YellowCheck.src}
             alt="checkmark"
             width="27"
             height="27"

@@ -2,6 +2,7 @@
 import { cn } from "@utils/utils";
 import List1186 from "./list-1186.astro";
 import List1186Li from "./list-1186-li.astro";
+import { ClockZoom, Icon247, Members } from "@assets/index";
 
 interface Props {}
 
@@ -12,17 +13,17 @@ const {} = Astro.props;
 
 <List1186>
   <List1186Li
-    src="/src/assets/icons/247.svg"
+    src={Icon247.src}
     title="Wheel Alignment"
     description="We provide top notch Wheel alignment service for all types of vehicle makes and models."
   />
   <List1186Li
-    src="/src/assets/icons/members.svg"
+    src={Members.src}
     title="Wheel Alignment"
     description="We provide top notch Wheel alignment service for all types of vehicle makes and models."
   />
   <List1186Li
-    src="/src/assets/icons/clock-zoom.svg"
+    src={ClockZoom.src}
     title="Wheel Alignment"
     description="We provide top notch Wheel alignment service for all types of vehicle makes and models."
   />

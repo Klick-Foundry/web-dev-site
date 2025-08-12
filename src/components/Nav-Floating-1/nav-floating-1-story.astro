@@ -6,6 +6,7 @@ import NavFloating1Li from "./nav-floating-1-li.astro";
 import NavFloating1Social from "./nav-floating-1-social.astro";
 import client from "@data/client.json"
 import navData from "@data/navData";
+import { Facebook1A, Instagram1A, LogoBasicSvg, Twitter1A, Youtube1A } from "@assets/index";
 
 interface Props {}
 
@@ -16,7 +17,7 @@ const {} = Astro.props;
 
 <NavFloating1
   logoHref="/"
-  logoSrc="/src/assets/icons/logo-basic.svg"
+  logoSrc={LogoBasicSvg.src}
   phone={client.phoneFormatted}
   phoneHref={client.phoneForTel}
   variant="top"
@@ -52,8 +53,8 @@ const {} = Astro.props;
       </NavFloating1Li>
     ))
   }
-  <!-- <NavFloating1Social slot="social" href="/" src="/src/assets/icons/facebook-1a.svg" />
-  <NavFloating1Social slot="social" href="/" src="/src/assets/icons/twitter-1a.svg" />
-  <NavFloating1Social slot="social" href="/" src="/src/assets/icons/instagram1a.svg" />
-  <NavFloating1Social slot="social" href="/" src="/src/assets/icons/youtube1a.svg" /> -->
+  <!-- <NavFloating1Social slot="social" href="/" src={Facebook1A.src} />
+  <NavFloating1Social slot="social" href="/" src={Twitter1A.src} />
+  <NavFloating1Social slot="social" href="/" src={Instagram1A.src} />
+  <NavFloating1Social slot="social" href="/" src={Youtube1A.src} /> -->
 </NavFloating1>

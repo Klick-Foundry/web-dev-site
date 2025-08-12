@@ -4,7 +4,7 @@ import Hero1619Section from "./hero-1619-section.astro";
 import Hero1619Feature from "./hero-1619-feature.astro";
 import Hero1619 from "./hero-1619.astro";
 import CsButton1 from "@components/Button-1/cs-button-1.astro";
-import Hero from "src/assets/images/web-dev/comp-phone-dark.webp";
+import {CheckCircle, CompPhoneDark, LifebuoyGold, Like} from "../../assets";
 
 interface Props {}
 
@@ -17,7 +17,7 @@ const button = "leading-[clamp(2.875rem,_5.5vw,_3.5rem)] m-[0]";
 <Hero1619Section
   topper="Websites that Work for Your Business"
   title="Grow Your Revenue with Fast, Affordable Web Solutions"
-  src={Hero}
+  src={CompPhoneDark}
   alt="Digital background"
 >
   <CsButton1
@@ -31,17 +31,17 @@ const button = "leading-[clamp(2.875rem,_5.5vw,_3.5rem)] m-[0]";
     <Hero1619Feature
       title="Built for Results"
       text="Hand-coded websites designed to attract your customers and boost your bottom line."
-      src="/src/assets/icons/check-circle.svg"
+      src={CheckCircle.src}
     />
     <Hero1619Feature
       title="Hassle-Free Updates"
       text="We handle every edit for you, so you can focus on running your business, not your website."
-      src="/src/assets/icons/Lifebuoy-gold.svg"
+      src={LifebuoyGold.src}
     />
     <Hero1619Feature
       title="Local Expertise"
       text="Tailored solutions that help your business stand out in your community and rank higher online."
-      src="/src/assets/icons/Like.svg"
+      src={Like.src}
     />
   </Hero1619>
 </Hero1619Section>
