@@ -2,6 +2,7 @@
 import { cn } from "@utils/utils";
 import Sbs598 from "./sbs-598.astro";
 import Text from "@components/ContentFlair/Toppers/Text/text.astro";
+import Img from "/src/assets/images/web-dev/working.webp"
 
 interface Props {}
 
@@ -14,7 +15,7 @@ const {} = Astro.props;
   topper="Klick Foundry"
   title="Who We Are"
   alt="Working at desk"
-  src="/assets/images/web-dev/working.jpg"
+  src={Img}
 >
   <Text
     className="cs-text"

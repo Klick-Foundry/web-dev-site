@@ -98,7 +98,8 @@ const button =
     text={buttonText}
     className={cn(
       button,
-      popular && "bg-white text-black before:bg-secondary hover:text-white transform transition-colors duration-300",
+      popular && "bg-white before:bg-secondary hover:text-white transform transition-colors duration-300",
     )}
+    textColor={popular ? "bodyTextColor" : "bodyTextColorWhite"}
   />
 </li>

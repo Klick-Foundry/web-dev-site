@@ -1,12 +1,16 @@
 ---
 import { cn } from "@utils/utils";
+import Picture from "./ContentFlair/Picture/picture.astro";
+import Laptop from "/src/assets/images/web-dev/laptop2.webp";
 
 // Styles
-const whyChoose = "relative overflow-hidden sm:py-[clamp(3.75rem,7.82vw,6.25rem)] px-4";
+const whyChoose =
+  "relative overflow-hidden sm:py-[clamp(3.75rem,7.82vw,6.25rem)] px-4";
 const container =
-"w-full max-w-[80rem] m-auto flex flex-col items-center gap-[clamp(3rem,7vw,4rem)]"
-const picture = "block relative w-full h-[18.75rem] sm:h-full sm:w-1/2 sm:left-1/2 sm:right-auto sm:absolute sm:bottom-0 sm:z-[-1] sm:before:content-[''] sm:before:w-[21.875rem] sm:before:bg-white sm:before:dark:bg-dark sm:before:[clip-path:polygon(0_0,73%_0,42%_100%,0_100%)] sm:before:opacity-100 sm:before:block sm:before:absolute sm:before:top-[-0.125rem] sm:before:bottom-[-0.125rem] sm:before:left-[-0.125rem] sm:before:right-auto sm:before:z-[10]"
-const img = "absolute top-0 left-0 h-full w-full object-cover"
+  "w-full max-w-[80rem] m-auto flex flex-col items-center gap-[clamp(3rem,7vw,4rem)]";
+const picture =
+  "block relative w-full h-[18.75rem] sm:h-full sm:w-1/2 sm:left-1/2 sm:right-auto sm:absolute sm:bottom-0 sm:z-[-1] sm:before:content-[''] sm:before:w-[21.875rem] sm:before:bg-white sm:before:dark:bg-dark sm:before:[clip-path:polygon(0_0,73%_0,42%_100%,0_100%)] sm:before:opacity-100 sm:before:block sm:before:absolute sm:before:top-[-0.125rem] sm:before:bottom-[-0.125rem] sm:before:left-[-0.125rem] sm:before:right-auto sm:before:z-[10]";
+const img = "absolute top-0 left-0 h-full w-full object-cover";
 const content =
   "text-left w-full flex flex-col items-start max-w-[39.375rem] mr-auto pb-[clamp(3.75rem,7.82vw,6.25rem)] px-4 pt-0 box-border sm:w-3/5 sm:p-0";
 const topper =
@@ -17,46 +21,92 @@ const titleUnderline =
   "before:content-[''] before:absolute before:block before:h-[0.0625em] before:w-[1.515em] before:bg-secondary before:opacity-100 before:bottom-[-0.3em] before:left-1/2 before:transform before:-translate-x-1/2";
 const text =
   "text-base leading-[1.5em] w-full max-w-[40.625rem] mb-4 [&:last-of-type]:mb-8 text-bodyTextColor dark:text-bodyTextColorWhite";
-const ul = "p-0 m-0 sm:columns-2 max-w-[34.375rem]"
-const li = "list-none text-xl leading-[1.5em] font-bold mb-2 text-headerColor dark:text-bodyTextColorWhite flex justify-start items-center"
-const icon = "mr-4"
-const button = "text-base leading-[clamp(2.875rem,5.5vw,3.5rem)] no-underline font-bold text-center mt-8 text-white min-w-[9.375rem] px-[1.5rem] bg-primary rounded inline-block relative z-[1] box-border"
-const buttonBefore = "before:content-[''] before:absolute before:h-full before:w-0 before:bg-black before:opacity-100 before:top-0 before:left-0 before:z-[-1] before:rounded-sm before:transform before:transition-all before:duration-300 before:hover:w-full"
+const ul = "p-0 m-0 sm:columns-2 max-w-[34.375rem]";
+const li =
+  "list-none text-xl leading-[1.5em] font-bold mb-2 text-headerColor dark:text-bodyTextColorWhite flex justify-start items-center";
+const icon = "mr-4";
+const button =
+  "text-base leading-[clamp(2.875rem,5.5vw,3.5rem)] no-underline font-bold text-center mt-8 text-white min-w-[9.375rem] px-[1.5rem] bg-primary rounded inline-block relative z-[1] box-border";
+const buttonBefore =
+  "before:content-[''] before:absolute before:h-full before:w-0 before:bg-black before:opacity-100 before:top-0 before:left-0 before:z-[-1] before:rounded-sm before:transform before:transition-all before:duration-300 before:hover:w-full";
 ---
 
 <section id="why-choose-37" class={cn(whyChoose)}>
   <div class={cn(container)}>
-      <!-- Right Image -->
-      <picture class={cn(picture, "picture")}>
-          <source media="(max-width: 600px)" srcset="/assets/images/web-dev/laptop2.jpg">
-          <source media="(min-width: 601px)" srcset="/assets/images/web-dev/laptop2.jpg">
-          <img class={cn(img)} aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/web-dev/laptop2.jpg" alt="laptop" width="858" height="781">
-      </picture>
-      <div class={cn(content)}>
-          <span class={cn(topper)}>Why Choose Us</span>
-          <h2 class={cn(title, titleUnderline)}>Your Business Deserves a Rockstar Website</h2>
-          <p class={cn(text)}>
-            We build websites that load fast, rank well, and bring in customers — without breaking your budget. See how your current site stacks up with a free Google PageSpeed test. 
-          </p>
-          <ul class={cn(ul)}>
-              <li class={cn(li)}>
-                  <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Faster Sites, More Leads
-              </li>
-              <li class={cn(li)}>
-                  <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Boost Your Local Ranking
-              </li>
-              <li class={cn(li)}>
-                  <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Stress-Free Management
-              </li>
-              <li class={cn(li)}>
-                  <img class={cn(icon)} aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Why-Choose/yellow-check.svg" alt="checkmark" width="27" height="27">
-                  Affordable Growth
-              </li>
-          </ul>
-          <a href="/contact" class={cn(button, buttonBefore)}>START NOW</a>
-      </div>
+    <!-- Right Image -->
+    <Picture
+      className={cn(picture, "picture")}
+      imgClassName={cn(img)}
+      src={Laptop}
+      alt="laptop"
+      width="858"
+      height="781"
+    />
+    <div class={cn(content)}>
+      <span class={cn(topper)}>Why Choose Us</span>
+      <h2 class={cn(title, titleUnderline)}>
+        Your Business Deserves a Rockstar Website
+      </h2>
+      <p class={cn(text)}>
+        We build websites that load fast, rank well, and bring in customers —
+        without breaking your budget. See how your current site stacks up with a
+        free Google PageSpeed test.
+      </p>
+      <ul class={cn(ul)}>
+        <li class={cn(li)}>
+          <img
+            class={cn(icon)}
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/src/assets/icons/yellow-check.svg"
+            alt="checkmark"
+            width="27"
+            height="27"
+          />
+          Faster Sites, More Leads
+        </li>
+        <li class={cn(li)}>
+          <img
+            class={cn(icon)}
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/src/assets/icons/yellow-check.svg"
+            alt="checkmark"
+            width="27"
+            height="27"
+          />
+          Boost Your Local Ranking
+        </li>
+        <li class={cn(li)}>
+          <img
+            class={cn(icon)}
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/src/assets/icons/yellow-check.svg"
+            alt="checkmark"
+            width="27"
+            height="27"
+          />
+          Stress-Free Management
+        </li>
+        <li class={cn(li)}>
+          <img
+            class={cn(icon)}
+            aria-hidden="true"
+            loading="lazy"
+            decoding="async"
+            src="/src/assets/icons/yellow-check.svg"
+            alt="checkmark"
+            width="27"
+            height="27"
+          />
+          Affordable Growth
+        </li>
+      </ul>
+      <a href="/contact" class={cn(button, buttonBefore)}>START NOW</a>
+    </div>
   </div>
 </section>

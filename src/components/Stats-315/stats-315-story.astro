@@ -2,6 +2,7 @@
 import { cn } from "@utils/utils";
 import Stats315 from "./stats-315.astro";
 import Stats315Li from "./stats-315-li.astro";
+import PersonGrey from "/src/assets/icons/person-grey.svg"
 
 interface Props {}
 
@@ -11,20 +12,20 @@ const {} = Astro.props;
 ---
 
 <Stats315>
-  <Stats315Li src="/assets/svgs/person-grey.svg" number="100%"
+  <Stats315Li src={PersonGrey} number="100%"
   stat="Hand-Coded Sites" />
   <Stats315Li
-    src=""
+    src={PersonGrey}
     number="1"
     stat="Second Load Times"
   />
   <Stats315Li
-    src=""
+    src={PersonGrey}
     number="$0"
     stat="Upfront Costs for Monthly Plans"
   />
   <Stats315Li
-    src=""
+    src={PersonGrey}
     number="Unlimited*"
     stat="Edit Support"
   />

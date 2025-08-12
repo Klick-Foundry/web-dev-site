@@ -11,9 +11,7 @@ interface Props {
   topper: string;
   title: string;
   alt: string;
-  src: string;
-  mobileSrc?: string;
-  tabletSrc?: string;
+  src: ImageMetadata;
   width?: string;
   height?: string;
 }
@@ -23,10 +21,8 @@ const {
   title,
   alt,
   src,
-  mobileSrc = src,
-  tabletSrc = src,
-  width = "",
-  height = "",
+  width = "960",
+  height = "796",
 } = Astro.props;
 
 // Styles
@@ -43,8 +39,6 @@ const img = "absolute top-0 left-0 h-full w-full object-cover";
   <Picture
     src={src}
     alt={alt}
-    mobileSrc={mobileSrc}
-    tabletSrc={tabletSrc}
     width={width}
     height={height}
     className={cn(background)}

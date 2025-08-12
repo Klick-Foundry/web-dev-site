@@ -10,20 +10,16 @@ import { cn } from "@utils/utils";
 interface Props {
   topper?: string;
   title?: string;
-  src: string;
+  src: ImageMetadata;
   alt: string;
   picWidth?: string;
   picHeight?: string;
-  picMobileSrc?: string;
-  picTabletSrc?: string;
 }
 
 const {
   topper,
   title,
   src,
-  picMobileSrc = src,
-  picTabletSrc = src,
   alt,
   picHeight = "1500",
   picWidth = "2250",
@@ -124,7 +120,7 @@ const img =
           </span>
         )
       }
-      {title && <Title title={title} className={cn(titleStyles)} />}
+      {title && <Title level="1" title={title} className={cn(titleStyles)} />}
       <slot name="button" />
     </Content>
     <slot name="hero" />
@@ -134,9 +130,9 @@ const img =
     alt={alt}
     width={picWidth}
     height={picHeight}
-    mobileSrc={picMobileSrc}
-    tabletSrc={picTabletSrc}
     className={cn(background)}
     imgClassName={cn(img)}
+    fetchPriority="high"
+    loading="eager"
   />
 </Section>

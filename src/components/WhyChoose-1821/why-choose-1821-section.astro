@@ -10,9 +10,7 @@ import { cn } from "@utils/utils";
 interface Props {
   topper: string;
   title: string;
-  src: string;
-  mobileSrc?: string;
-  tabletSrc?: string;
+  src: ImageMetadata;
   alt: string;
   width?: string;
   height?: string;
@@ -22,8 +20,6 @@ const {
   topper,
   title,
   src,
-  mobileSrc = src,
-  tabletSrc = src,
   alt,
   width = "562",
   height = "568",
@@ -53,8 +49,6 @@ const img =
         className={picture}
         imgClassName={img}
         src={src}
-        mobileSrc={mobileSrc}
-        tabletSrc={tabletSrc}
         width={width}
         height={height}
         alt={alt}
