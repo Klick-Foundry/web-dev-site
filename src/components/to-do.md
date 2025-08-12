@@ -26,6 +26,9 @@ Use squoosh on images
 Edit CsButton1
 H1 tags
 
+Nav component styles is:inline
+BaseLayout styles is:inline
+
 Read the Pagespeed analysis to figure out what it's saying to do
 
 2. CSS: Render-blocking styles slowing LCP (~120-620ms savings possible) (how do I do this?)
